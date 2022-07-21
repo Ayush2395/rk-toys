@@ -1,0 +1,63 @@
+// override variables
+$primary: #0d3c68;
+$secondary: #f95939;
+$success: #1769b5;
+$warning: #f4d35d;
+$info: #ee9649;
+$danger: #ed2e07;
+$dark: #201e1e;
+$light: #f9f0f2;
+$shadow: 0 3px 8px rgba(0, 0, 0, 0.31);
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "warning": $warning,
+  "info": $info,
+  "danger": $danger,
+  "dark": $dark,
+  "light": $light,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// global changes
+section {
+  min-height: 100vh;
+}
+
+.main {
+  position: relative;
+  top: 10vh;
+}
+
+.header {
+  box-shadow: $shadow;
+  transition: box-shadow 0.3s ease-in;
+}
+
+.btn {
+  border-radius: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+// login and registered form
+.form-control {
+  border: none;
+  border-bottom: 2px solid $secondary;
+  border-radius: 0;
+}
+
+.input-group-text {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $secondary;
+  border-radius: 0;
+}
